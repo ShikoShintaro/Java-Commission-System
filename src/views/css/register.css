@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ---------------------------
+   Root Font & Centering
+---------------------------- */
+.root {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-alignment: center;
+    -fx-background-color: linear-gradient(to bottom right, #0077b6, #00b4d8);
+}
+
+/* ---------------------------
+   Animated Liquid Background
+---------------------------- */
+.animated-background {
+    -fx-fill: linear-gradient(to bottom right, #0077b6, #00b4d8);
+}
+
+/* ---------------------------
+   Form Container (Frosted Glass)
+---------------------------- */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-padding: 30 50;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 25, 0.3, 0, 5);
+}
+
+/* ---------------------------
+   Form Titles
+---------------------------- */
+.form-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+    -fx-padding: 0 0 10 0;
+    -fx-alignment: center;
+}
+
+/* ---------------------------
+   Input Fields
+---------------------------- */
+.input-field {
+    -fx-pref-width: 100%;
+    -fx-min-width: 250px;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #aaa;
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+.input-field:focused {
+    -fx-border-color: #00b4d8;
+    -fx-effect: dropshadow(gaussian, rgba(0,180,216,0.5), 10, 0.3, 0, 0);
+}
+
+/* ---------------------------
+   Buttons
+---------------------------- */
+.register-button,
+.back-button,
+.file-button {
+    -fx-pref-width: 250px;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
+    -fx-background-color: #e0e0e0;
+    -fx-cursor: hand;
+    -fx-transition: 0.3s;
+}
+.register-button:hover,
+.back-button:hover,
+.file-button:hover {
+    -fx-background-color: #cccccc;
+}
+
+/* ---------------------------
+   Radio Buttons
+---------------------------- */
+.radio-btn {
+    -fx-font-size: 13px;
+    -fx-text-fill: #000;
+}
+
+/* ---------------------------
+   Labels
+---------------------------- */
+.label {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+#otpErrorLabel,
+#ageWarningLabel {
+    -fx-text-fill: red;
+}
+#statusLabel {
+    -fx-text-fill: green;
+}
+
+/* ---------------------------
+   DARK MODE STYLING
+---------------------------- */
+.root-dark {
+    -fx-background-color: #121212;
+}
+
+.root-dark .form-title,
+.root-dark .input-field,
+.root-dark .register-button,
+.root-dark .back-button,
+.root-dark .file-button,
+.root-dark .radio-btn {
+    -fx-text-fill: #fff;
+}
+
+.root-dark .input-field {
+    -fx-background-color: #222;
+    -fx-border-color: #555;
+}
+
+.root-dark .register-button,
+.root-dark .back-button,
+.root-dark .file-button {
+    -fx-background-color: #333;
+}
+.root-dark .register-button:hover,
+.root-dark .back-button:hover,
+.root-dark .file-button:hover {
+    -fx-background-color: #444;
+}
+
+.root-dark .form-container {
+    -fx-background-color: rgba(30,30,30,0.45);
+    -fx-border-color: rgba(255,255,255,0.15);
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 20, 0.2, 0, 0);
+}

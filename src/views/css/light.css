@@ -1,0 +1,27 @@
+.root-dark {
+    -fx-background-color: #121212;
+    -fx-background-color: derive(-fx-base, -10%);
+}
+.root-dark .form-title,
+.root-dark .input-field,
+.root-dark .file-button,
+.root-dark .register-button,
+.root-dark .back-button,
+.root-dark .theme-toggle,
+.root-dark .radio-btn {
+    -fx-text-fill: #fff;
+}
+.root-dark .input-field {
+    -fx-background-color: #222;
+    -fx-border-color: #555;
+}
+.root-dark .file-button,
+.root-dark .register-button,
+.root-dark .back-button {
+    -fx-background-color: #333;
+}
+.root-dark .file-button:hover,
+.root-dark .register-button:hover,
+.root-dark .back-button:hover {
+    -fx-background-color: #444;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.root {
+    -fx-font-family: "Roboto", sans-serif;
+}
+
+/* Animated Background */
+.animated-background {
+    -fx-fill: linear-gradient(to bottom right, #0077b6, #00b4d8);
+}
+
+/* Form Container (Frosted Glass) */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-padding: 40;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 30, 0.3, 0, 0);
+}
+
+/* Title */
+.form-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Input Fields */
+.input-field {
+    -fx-pref-width: 250;
+    -fx-font-size: 14px;
+    -fx-padding: 8;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #aaa;
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+.input-field:focused {
+    -fx-border-color: #00b4d8;
+}
+
+/* Buttons */
+.file-button,
+.register-button,
+.back-button {
+    -fx-pref-width: 250;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
+    -fx-background-color: #e0e0e0;
+    -fx-cursor: hand;
+    -fx-transition: 0.3s;
+}
+.file-button:hover,
+.register-button:hover,
+.back-button:hover {
+    -fx-background-color: #cccccc;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000;
+    -fx-cursor: hand;
+}
+.theme-toggle:hover {
+    -fx-text-fill: #00b4d8;
+}
+
+/* Radio Buttons */
+.radio-btn {
+    -fx-text-fill: #000;
+    -fx-font-size: 13px;
+}
+
+/* DARK MODE */
+.root-dark {
+    -fx-background-color: #121212;
+}
+.root-dark .form-title,
+.root-dark .input-field,
+.root-dark .file-button,
+.root-dark .register-button,
+.root-dark .back-button,
+.root-dark .theme-toggle,
+.root-dark .radio-btn {
+    -fx-text-fill: #fff;
+}
+.root-dark .input-field {
+    -fx-background-color: #222;
+    -fx-border-color: #555;
+}
+.root-dark .file-button,
+.root-dark .register-button,
+.root-dark .back-button {
+    -fx-background-color: #333;
+}
+.root-dark .file-button:hover,
+.root-dark .register-button:hover,
+.root-dark .back-button:hover {
+    -fx-background-color: #444;
+}

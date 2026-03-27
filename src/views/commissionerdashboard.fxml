@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.CommissionerDashboardController"
+            prefWidth="950" prefHeight="600">
+
+    <!-- Top header -->
+    <top>
+        <HBox spacing="20" style="-fx-background-color: #023e8a;" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+            <Label text="Commissioner Dashboard" style="-fx-text-fill: white; -fx-font-size: 20px;"/>
+            <Label fx:id="balanceLabel" text="Balance: $0.00" style="-fx-text-fill: white; -fx-font-size: 16px;"/>
+            <Pane HBox.hgrow="ALWAYS"/> <!-- pushes logout to right -->
+            <Button text="Logout" onAction="#handleLogout"/>
+        </HBox>
+    </top>
+
+    <!-- Left sidebar -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #03045e;" alignment="TOP_CENTER" prefWidth="200">
+            <padding>
+                <Insets top="15" right="10" bottom="15" left="10"/>
+            </padding>
+            <Label text="Clients" style="-fx-text-fill: white; -fx-font-size: 16px;"/>
+            <ListView fx:id="clientsList" prefHeight="300" style="-fx-background-color: #023e8a; -fx-text-fill: white;"/>
+            <TextField fx:id="messageField" promptText="Type a message..." maxWidth="180"/>
+            <Button text="Send Message" maxWidth="180" onAction="#handleSendMessage"/>
+            <Button text="Send Attachment" maxWidth="180" onAction="#handleSendAttachment"/>
+            <Label fx:id="statusLabel" text="" style="-fx-text-fill: red;"/>
+        </VBox>
+    </left>
+
+    <!-- Center: Transactions Table -->
+    <center>
+        <TableView fx:id="transactionTable" prefWidth="700" prefHeight="400">
+            <columns>
+                <TableColumn fx:id="dateCol" text="Date" prefWidth="150"/>
+                <TableColumn fx:id="typeCol" text="Type" prefWidth="100"/>
+                <TableColumn fx:id="clientCol" text="Counterpart" prefWidth="200"/>
+                <TableColumn fx:id="detailsCol" text="Message" prefWidth="300"/>
+                <TableColumn fx:id="amountCol" text="Amount" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

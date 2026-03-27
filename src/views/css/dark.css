@@ -1,0 +1,79 @@
+.root {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-background-color: derive(-fx-base, -10%);
+}
+
+/* Animated background */
+.animated-background {
+    -fx-fill: linear-gradient(to bottom right, #0077b6, #00b4d8);
+}
+
+/* Frosted glass form */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 30, 0.3, 0, 0);
+}
+
+/* Title */
+.form-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+    -fx-padding: 0 0 10 0;
+}
+
+/* Inputs */
+.input-field {
+    -fx-pref-width: 250;
+    -fx-font-size: 14px;
+    -fx-padding: 8;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #aaa;
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+.input-field:focused {
+    -fx-border-color: #00b4d8;
+}
+
+/* Buttons */
+.file-button,
+.register-button,
+.back-button {
+    -fx-pref-width: 250;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
+    -fx-background-color: #e0e0e0;
+    -fx-cursor: hand;
+}
+.file-button:hover,
+.register-button:hover,
+.back-button:hover {
+    -fx-background-color: #cccccc;
+}
+
+/* Theme toggle */
+.theme-toggle {
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000;
+    -fx-cursor: hand;
+}
+.theme-toggle:hover {
+    -fx-text-fill: #00b4d8;
+}
+
+/* Radio buttons */
+.radio-btn {
+    -fx-text-fill: #000;
+    -fx-font-size: 13px;
+}

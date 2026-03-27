@@ -1,0 +1,119 @@
+/* ===== Base ===== */
+.root {
+    -fx-font-family: "Roboto", sans-serif;
+}
+
+/* ===== Animated Gradient Background ===== */
+.animated-background {
+    -fx-fill: linear-gradient(to bottom right, #0077b6, #00b4d8, #6a0dad);
+}
+
+/* ===== Frosted Glass Form ===== */
+.form-container {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 30, 0.3, 0, 0);
+    -fx-alignment: center;
+}
+
+/* ===== Title ===== */
+.form-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+    -fx-padding: 0 0 15 0;
+}
+
+/* ===== Question Label ===== */
+.question-label {
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-font-style: italic;
+}
+
+/* ===== Input Fields ===== */
+.input-field {
+    -fx-pref-width: 260;
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #aaa;
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-text-fill: #000;
+    -fx-transition: 0.3s;
+}
+.input-field:focused {
+    -fx-border-color: #00b4d8;
+    -fx-background-color: rgba(255, 255, 255, 1);
+}
+
+/* ===== Buttons ===== */
+.submit-button,
+.back-button {
+    -fx-pref-width: 260;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000;
+    -fx-background-color: rgba(255,255,255,0.8);
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-transition: 0.3s;
+}
+.submit-button:hover {
+    -fx-background-color: #00b4d8;
+    -fx-text-fill: white;
+}
+.back-button:hover {
+    -fx-background-color: #6a0dad;
+    -fx-text-fill: white;
+}
+
+/* ===== Error Label ===== */
+.error-label {
+    -fx-text-fill: #ff4d4d;
+    -fx-font-size: 13px;
+    -fx-padding: 5 0 10 0;
+}
+
+/* ===== Theme Toggle ===== */
+.theme-toggle {
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000;
+    -fx-cursor: hand;
+}
+.theme-toggle:hover {
+    -fx-text-fill: #00b4d8;
+}
+
+/* ===== Dark Mode ===== */
+.root-dark {
+    -fx-background-color: #121212;
+}
+.root-dark .form-title,
+.root-dark .input-field,
+.root-dark .submit-button,
+.root-dark .back-button,
+.root-dark .theme-toggle,
+.root-dark .question-label {
+    -fx-text-fill: #fff;
+}
+.root-dark .input-field {
+    -fx-background-color: #222;
+    -fx-border-color: #555;
+}
+.root-dark .submit-button,
+.root-dark .back-button {
+    -fx-background-color: #333;
+}
+.root-dark .submit-button:hover,
+.root-dark .back-button:hover {
+    -fx-background-color: #444;
+}
